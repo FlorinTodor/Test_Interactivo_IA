@@ -437,10 +437,10 @@
             question: "Una función de valoración de nodos intermedios de un juego:",
                 options: [    
                 "a. No tiene que contemplar situaciones terminales del juego.",
-                "b. Tiene que contemplar situaciones terminales del juego, valorándolas con -inf si gana MIN y +i.",
-                "c. Tiene que contemplar situaciones terminales del juego, valorándolas con -inf si pierde MIN y +."
+                "b. Tiene que contemplar situaciones terminales del juego, valorándolas con -inf si gana MIN y +inf si pierde MIN.",
+                "c. Tiene que contemplar situaciones terminales del juego, valorándolas con -inf si pierde MIN y +inf si gana MIN."
                 ],
-                correct: "c"
+                correct: "b"
             },
             {
             question: "Una regla general como “Todas las casillas azules de un mapa pueden transitarse si el agente tiene bikini",
@@ -1061,7 +1061,7 @@
         "b) Solo si el cambio de escala disminuye el valor actual",
         "c) Sí, no depende de los cambios de escala"
     ],
-    correct: "b"
+    correct: "c"
 },
 
 {
@@ -1185,7 +1185,7 @@
         "c) sistemas que actúan como humanos",
         "d) sistemas que piensan racionalmente"
     ],
-    correct: "a"
+    correct: "c"
 },
 
 {
@@ -1225,7 +1225,7 @@
         "b) Es falso, el valor puede cambiar",
         "c) Es cierto, ese valor nunca cambia"
     ],
-    correct: "c"
+    correct: "b"
 },
 
 {
@@ -1236,7 +1236,7 @@
         "c) su valor actual es menor o igual que la cota alfa",
         "d) su valor actual es mayor que la cota beta"
     ],
-    correct: "a"
+    correct: "c"
 },
 
 {
@@ -1270,7 +1270,7 @@
         "c) Enfriamiento simulado",
         "d) Descenso iterativo"
     ],
-    correct: "b"
+    correct: "d"
 },
 
 {
@@ -1307,7 +1307,7 @@
         "b) Es una estimación del mejor coste para ir desde el estado inicial al estado objetivo pasando por el nodo actual",
         "c) Es una estimación del mejor coste para ir desde el estado inicial hasta el nodo actual"
     ],
-    correct: "b"
+    correct: "c"
 },
 {
     question: "25. En un juego la incertidumbre producida por la tirada de un dado se mide",
@@ -1316,7 +1316,7 @@
         "b) con el caso más desfavorable",
         "c) con el caso más favorable"
     ],
-    correct: "b"
+    correct: "a"
 },
 {
     question: "26. ¿Cuál de las siguientes herramientas no debería emplearse para construir un agente reactivo?",
@@ -1336,7 +1336,7 @@
         "c) el menor valor actual de entre los nodos MIN en el camino que hay desde el nodo actual al nodo solución",
         "d) el mayor valor actual de entre los nodos MAX en el camino que hay desde el nodo actual al nodo de inicio"
     ],
-    correct: "a"
+    correct: "b"
 },
 {
     question: "28. La búsqueda en anchura permite obtener la solución con menor número de acciones",
