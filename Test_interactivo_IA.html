@@ -76,6 +76,23 @@
         ul li {
             margin-bottom: 5px;
         }
+        #reset-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reset-button:hover {
+    background-color: #c82333;
+}
     </style>
 </head>
 <body>
@@ -2038,6 +2055,7 @@ const questionsPerTest = 40; // Total de preguntas en el test
                 document.getElementById('start-button').style.display = 'block';
                 return; // Salir de la función después de reiniciar
             }
+            
 
             correctCount = 0;
             incorrectCount = 0;
@@ -2065,6 +2083,7 @@ const questionsPerTest = 40; // Total de preguntas en el test
         }
 
         function resetQuestions() {
+           alert('Reiniciando preguntas...');
             availableQuestions = allQuestions.slice();
             localStorage.setItem('availableQuestions', JSON.stringify(availableQuestions));
             document.getElementById('available-questions-count').textContent = availableQuestions.length;
@@ -2172,5 +2191,7 @@ const questionsPerTest = 40; // Total de preguntas en el test
             document.getElementById('question-options').style.display = 'none'; // Asegurar que las opciones estén ocultas
         }
     </script>
+
+<button id="reset-button" onclick="resetQuestions()">Reiniciar Preguntas</button>
 </body>
 </html>
